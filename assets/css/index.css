@@ -1,0 +1,527 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Readex+Pro:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: "Readex Pro", sans-serif;
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+.navbar {
+  width: 100%;
+  box-shadow: 1px 1px 1px rgba(0, 204, 255, 0.5);
+  background: #fff;
+
+  display: flex;
+  justify-content: center;
+}
+.navbar .nav-container {
+  display: flex;
+  width: 90%;
+}
+.nav-container .logo {
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+.nav-container .logo a {
+  font-size: 2.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+.nav-container .nav-item {
+  width: 50%;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+}
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: none;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: black;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: black;
+  font-size: 1em;
+}
+.nav-item a:hover {
+  text-decoration: underline;
+  text-decoration-color: #59f4bd;
+  text-decoration-line: overline;
+  color: #13d1bb;
+}
+/* home */
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .bg {
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.home .container {
+  display: flex;
+  width: 90%;
+  height: 70vh;
+}
+.home .container .contentBox {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .container .contentBox h3 {
+  color: #59f4bd;
+  font-size: 30px;
+  padding: 50px 0px 0px 0px;
+}
+.home .container .imgBox {
+  width: 50%;
+  height: 100%;
+}
+.home .container .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.home .container .contentBox p {
+  width: 70%;
+  margin: 10px 0 0px;
+}
+.home .container .contentBox a {
+  text-decoration: none;
+}
+.home .container .contentBox .start {
+  width: 100%;
+  padding: 13px;
+  background: #13d1bb;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.home .container .contentBox .start:hover {
+  background: transparent;
+  border: 1px solid #13d1bb;
+}
+.home .container .contentBox .start:active {
+  transform: scale(0.8);
+}
+/* Produk */
+.produk {
+  width: 100%;
+  height: 108%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.judul {
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  padding: 50px 0px 50px 0px;
+}
+.judul h1 {
+  display: flex;
+  width: 80%;
+  box-shadow: 5px 5px 5px 5px rgba(89, 244, 189, 0.1);
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+  justify-content: center;
+  align-items: center;
+}
+.produk .container {
+  display: flex;
+  width: 90%;
+  height: 70vh;
+  padding: 10px;
+  align-items: center;
+}
+.produk .container .card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.produk .container .card {
+  background: #fff;
+  margin: 0 auto;
+  display: flex;
+  box-shadow: 2px 2px 2px 2px rgba(0, 217, 201, 0.1);
+  width: 30%;
+  padding: 15px;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+}
+.produk .container .card:hover {
+  transition: 0.1s;
+  transform: scale(0.9);
+  border: 1px solid rgba(0, 217, 201, 1);
+}
+.card .order-btn {
+  width: 80%;
+  padding: 50px 0px 0px 0px;
+}
+.produk .container .card .order-btn .order {
+  width: 100%;
+  padding: 13px;
+  background: transparent;
+  border: 1px solid #13d1bb;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.produk .container .card .order-btn .order:hover {
+  background: #13d1bb;
+}
+.produk .container .card .order-btn .order:active {
+  transform: scale(0.9);
+}
+.penjelasan-produk {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+/* Sunscreen */
+.penjelasan-produk .sunscreen-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.penjelasan-produk .sunscreen-info .container {
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.penjelasan-produk .sunscreen-info .container .contentBox {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.penjelasan-produk .sunscreen-info .container .deskripsi h1 {
+  padding: 60px 0px 20px 0px;
+}
+.penjelasan-produk .sunscreen-info .container .deskripsi p {
+  width: 100%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 217, 201, 0.1);
+  padding: 20px 10px 10px 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+.penjelasan-produk .sunscreen-info .container .deskripsi {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  padding: 0px 50px 0px 0px;
+  justify-content: center;
+}
+
+.penjelasan-produk .sunscreen-info .container .contentBox .gambar img {
+  width: 100%;
+  height: 100%;
+}
+/* watersleepingmask */
+.penjelasan-produk .watersleepingmask {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.penjelasan-produk .watersleepingmask .container {
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.penjelasan-produk .watersleepingmask .container .contentBox {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.penjelasan-produk .watersleepingmask .container .deskripsi h1 {
+  padding: 60px 0px 20px 0px;
+}
+.penjelasan-produk .watersleepingmask .container .deskripsi p {
+  width: 100%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 217, 201, 0.1);
+  padding: 20px 10px 10px 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+.penjelasan-produk .watersleepingmask .container .deskripsi {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  padding: 0px 50px 0px 0px;
+  justify-content: center;
+}
+
+.penjelasan-produk .watersleepingmask .container .contentBox .gambar img {
+  width: 100%;
+  height: 100%;
+}
+/* Facial Toner */
+.penjelasan-produk .facial-toner-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.penjelasan-produk .facial-toner-info .container {
+  width: 90%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+.penjelasan-produk .facial-toner-info .container .contentBox {
+  display: flex;
+  width: 30%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.penjelasan-produk .facial-toner-info .container .deskripsi h1 {
+  padding: 60px 0px 20px 0px;
+}
+.penjelasan-produk .facial-toner-info .container .deskripsi p {
+  width: 100%;
+  box-shadow: 1px 1px 1px 1px rgba(0, 217, 201, 0.1);
+  padding: 20px 10px 10px 10px;
+  margin: 0px 0px 10px 0px;
+}
+
+.penjelasan-produk .facial-toner-info .container .deskripsi {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 60%;
+  padding: 0px 50px 0px 0px;
+  justify-content: center;
+}
+.penjelasan-produk .facial-toner-info .container .contentBox .gambar img {
+  width: 100%;
+  height: 100%;
+}
+/* Our Team */
+.biodata {
+  width: 100%;
+  height: 100%;
+}
+
+.biodata .container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.biodata .container .card {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 50px auto;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0.5px 0.5px 0.5px 0.5px #13d1bb;
+}
+.biodata .container .card .image-box {
+  box-shadow: 2px 2px 2px 2px rgba(0, 204, 255, 0.1);
+  height: 200px;
+}
+.biodata .container .card .image-box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+}
+.biodata .container .card .profile-details {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 15px;
+}
+.biodata .container .card .profile-details img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.biodata .container .profile-details .name {
+  font-size: 15px;
+  font-weight: 500;
+}
+.biodata .container .profile-details .job {
+  font-size: 12px;
+  font-weight: 500;
+  color: #4d4d4d;
+}
+/* Footer */
+footer {
+  text-align: center;
+  position: relative;
+}
+footer img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+}
+footer p {
+  position: absolute; /* position the text absolutely */
+  top: 50%; /* position the text vertically center */
+  left: 50%; /* position the text horizontally center */
+  transform: translate(-50%, -50%); /* this adjust the text to be perfectly center */
+  text-align: center; /* center align the text */
+  color: black; /* set text color to white */
+  font-size: 1em; /* increase the text size */
+}
+/* Responsive */
+/* Large Screen */
+@media screen and (max-width: 1200px) {
+  .biodata .container .card {
+    width: 40%;
+  }
+}
+/* Laptop */
+@media screen and (max-width: 992px) {
+  .biodata .container .card {
+    width: 40%;
+  }
+}
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .penjelasan-produk .sunscreen-info .container .deskripsi h1 {
+    text-align: center;
+  }
+  .penjelasan-produk .sunscreen-info .container .deskripsi {
+    width: 100%;
+  }
+  .penjelasan-produk .sunscreen-info .container {
+    flex-direction: column;
+    margin: 10em;
+  }
+
+  .penjelasan-produk .watersleepingmask .container .deskripsi {
+    width: 100%;
+  }
+  .penjelasan-produk .watersleepingmask .container {
+    flex-direction: column;
+    margin: 10em;
+  }
+  .penjelasan-produk .facial-toner-info .container .deskripsi h1 {
+    text-align: center;
+  }
+
+  .penjelasan-produk .facial-toner-info .container .deskripsi {
+    width: 100%;
+  }
+  .penjelasan-produk .facial-toner-info .container {
+    flex-direction: column;
+    margin: 10em;
+  }
+  .biodata .container {
+    flex-wrap: wrap;
+  }
+  .biodata .container .card {
+    width: 50%;
+  }
+  .hamburger .line {
+    display: block;
+  }
+  .nav-container {
+    flex-wrap: wrap;
+  }
+  .nav-container .nav-item {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    padding: 30px 10px 10px 10px;
+  }
+  .nav-container .nav-item a {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  .nav-container .logo {
+    margin: auto;
+  }
+  .home .container {
+    flex-wrap: wrap;
+  }
+  .home .container .contentBox {
+    width: 100%;
+    text-align: center;
+  }
+  .home .container .contentBox .start {
+    margin: 0 80px;
+  }
+  .home .container .imgBox {
+    display: none;
+  }
+  .produk .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 280vh;
+  }
+  .produk .container .card {
+    width: 100%;
+  }
+
+  .penjelasan-produk .sunscreen-info .container .contentBox {
+    width: 80%;
+  }
+  .penjelasan-produk .watersleepingmask .container .contentBox {
+    width: 100%;
+  }
+  .penjelasan-produk .facial-toner-info .container .contentBox {
+    width: 80%;
+  }
+  footer p {
+    font-size: 0.9em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .biodata .container .card {
+    width: 70%;
+  }
+  .penjelasan-produk .sunscreen-info .container {
+    margin: 10em 0 1em 5em;
+  }
+  .penjelasan-produk .watersleepingmask .container {
+    margin: 10em 0 1em 5em;
+  }
+  .penjelasan-produk .facial-toner-info .container {
+    margin: 10em 0 10em 5em;
+  }
+}
